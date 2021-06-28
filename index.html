@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS todo list</title>
+  <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>TODO&nbsp;LIST</h1>
+    </div>
+  
+    <div class="insert">
+      <input type="text" placeholder="新增代辦事項" class="txt">
+      <input type="submit" value="+" class="save">
+    </div>
+  
+    <div class="lists">
+      <div class="filter">
+        <input type="button" value="全部" class="all mouse">
+        <input type="button" value="待完成" class="undo">
+        <input type="button" value="已完成" class="finished">
+      </div>
+      <ul class="todo"></ul>
+      <div class="footer">
+        <label class="undo_num">0個待完成項目</label>
+        <input type="button" class="deleteAllDone" value="清除已完成項目">
+      </div>
+    </div>
+  </div>
+  <script src="all.js"></script>
+</body>
+</html>

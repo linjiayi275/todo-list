@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* above CSS RESET */
+body {
+  background: linear-gradient(175deg, #ffd370 0%, #ffd370 50%, white 50%, white 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333333;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 510px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 48px;
+  margin-bottom: 92px;
+}
+
+.header {
+  font-family: BalooTamma2;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 82px;
+  margin-bottom: 26px;
+}
+.header h1 {
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+  color: #9F9A91;
+}
+
+::-moz-placeholder {
+  color: #9F9A91;
+}
+
+:-ms-input-placeholder {
+  color: #9F9A91;
+}
+
+::-ms-input-placeholder {
+  color: #9F9A91;
+}
+
+::placeholder {
+  color: #9F9A91;
+}
+
+.insert {
+  position: relative;
+}
+.insert .txt {
+  width: 500px;
+  height: 48px;
+  position: absolute;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-family: NotoSansCJKtc;
+  font-size: 16px;
+  line-height: 24px;
+}
+.insert .save {
+  top: 4px;
+  right: 4px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333333;
+  background-color: #333333;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.lists {
+  margin-top: 84px;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+.lists .filter {
+  margin-left: 5px;
+}
+.lists .filter input {
+  background-color: #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  border-bottom: 2px solid #EFEFEF;
+  border-radius: 10px 10px 0px 0px;
+  width: 160px;
+  padding: 10px 0px 10px 0px;
+  cursor: pointer;
+  font-family: NotoSansCJKtc;
+  color: #9F9A91;
+  font-size: 14px;
+  line-height: 20px;
+}
+.lists .filter input:hover {
+  border-bottom: 2px solid #333333;
+}
+.lists .todo {
+  margin-bottom: 24px;
+}
+.lists .todo li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.lists .todo li label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.lists .todo li label .checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  margin-left: 24px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.lists .todo li label .checkbox:checked {
+  display: none;
+}
+.lists .todo li label .checkbox:checked ~ p {
+  text-decoration: line-through;
+  color: #9F9A91;
+}
+.lists .todo li label .checkbox:checked ~ span {
+  display: block;
+}
+.lists .todo li label span {
+  color: #ffd370;
+  font-size: 24px;
+  display: none;
+  margin-left: 26px;
+  margin-top: 16px;
+}
+.lists .todo li label p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  overflow: scroll;
+  width: 392px;
+  border-bottom: 1px solid #EFEFEF;
+}
+.lists .todo li .delete {
+  display: none;
+  margin-right: 16px;
+  margin-top: 16px;
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid #FFF;
+  cursor: pointer;
+}
+.lists .todo li:hover .delete {
+  display: block;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 32px;
+}
+.footer .undo_num {
+  margin-left: 24px;
+}
+.footer .deleteAllDone {
+  margin-right: 47px;
+  color: #9F9A91;
+  border: 0px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.footer .deleteAllDone:hover {
+  color: #333333;
+}
